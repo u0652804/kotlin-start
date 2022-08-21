@@ -1,0 +1,16 @@
+## Array 
+
+### iteator with index
+
+    val arr = IntArray(5) { it+1 }
+    for(i in 0..arr.size-1) {
+        print("${arr[i]} ")
+    } 
+    
+    for(i in 0 until arr.size) {
+        print("${arr.get(i)} ")
+    }
+    
+    for(i in arr.indices) {
+        print("${arr[i]} ")
+    }
