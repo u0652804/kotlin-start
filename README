@@ -48,3 +48,20 @@
     print(mList)
     mList.addAll(list)
     print(mList)
+
+## set
+
+    val s1 = setOf(1, 2)
+    val s2 = mutableSetOf(1)
+    s2.addAll(s1)
+    println("s1: $s1, s2: $s2 ")
+    println("s1 contains 1: ${s1.contains(1)}, s1 contains 3: ${s1.contains(3)}")
+ 
+    s2.remove(1)
+    println(s2)
+    
+    s2.clear()
+    println(s2)
+    
+    s2.add(5)
+    println(s2)
