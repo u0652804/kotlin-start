@@ -17,5 +17,5 @@
 
 ### iteator 
 
-    arr.forEach {print("$it ") }
+    arr.forEach { print("$it ") }
     for(e in arr) { print("$e ") }
