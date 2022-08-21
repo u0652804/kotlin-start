@@ -1,3 +1,7 @@
+## reference
+
+ - https://developer.android.com/codelabs/basic-android-kotlin-training-lists#2
+
 ## Array 
 
 ### iteator with index
@@ -24,3 +28,23 @@
 
     val arr1 = IntArray(0)
     val arr2 = emptyArray<Int>()
+
+
+## list
+
+### immutableList
+    
+    var list = listOf(1, 2, 3)
+    for(i in 0..list.size-1) { print("${list.get(i)} ") }
+    for(e in list) { print("$e ") }
+    list.forEach{ print("${it*2} ") }
+    print("list: " + list)
+    print("list: $list")
+    
+### mutableList
+
+    val mList = mutableListOf<Int>()
+    mList.add(1)
+    print(mList)
+    mList.addAll(list)
+    print(mList)
