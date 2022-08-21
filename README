@@ -19,3 +19,8 @@
 
     arr.forEach { print("$it ") }
     for(e in arr) { print("$e ") }
+
+### empty array
+
+    val arr1 = IntArray(0)
+    val arr2 = emptyArray<Int>()
