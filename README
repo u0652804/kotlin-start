@@ -72,3 +72,22 @@
     
     s2.add(5)
     println(s2)
+
+# map
+
+    val m = mutableMapOf(1 to "a")
+    println(m)
+    m[2] = "b"
+    println(m)
+    m.put(3, "c")
+    println(m)
+    println(m.keys)
+    println(m.values)
+    for(k in m.keys)
+        print(k)
+        
+    m.remove(1)
+    println(m)
+    
+    m.clear()
+    println(m)
