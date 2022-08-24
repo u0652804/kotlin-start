@@ -50,7 +50,7 @@
     
     // case 3
     val arr4 = Array(5) {2}
-    arr3 = arr4 // error*
+    arr3 = arr4 // error : Type mismatch: inferred type is Array<Int> but IntArray was expected
 
 ## list
 
