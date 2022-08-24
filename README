@@ -36,6 +36,21 @@
     val arr1 = IntArray(0)
     val arr2 = emptyArray<Int>()
 
+### vaild*
+
+    // case 1
+    val arr1 = IntArray(5) {0}
+    val arr2 = IntArray(5) {1}
+    arr1 = arr2 // error : val cannot be reassigned(val arr is immutable)
+    arr1[0] = arr2[0] // pass : element is mutable
+    
+    // case 2
+    var arr3 = IntArray(5) {0}
+    arr3 = arr2 // pass (var arr is mutable)
+    
+    // case 3
+    val arr4 = Array(5) {2}
+    arr3 = arr4 // error*
 
 ## list
 
